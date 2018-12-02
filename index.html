@@ -1,42 +1,71 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
-<head>
-    <title>A Biography</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
 
+<head>
+    <title>About | Jonathan Garcia</title>
+    <!-- CSS RESET -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cssReset.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Jonathan's Bio</h1>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">About Me <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="https://github.com/JonFromNYC">Portfolio</a>
+                    <a class="nav-item nav-link" href="https://www.linkedin.com/in/jonathangarcianyc">LinkedIn</a>
+                    <a class="nav-item nav-link" href="#">My resume</a>
+                </div>
+            </div>
+    </nav>
 
-    <div class="container">
-        <section id="main-bio">
-
-            <h2>Jonathan Garcia</h2>
-            <img id="bio-image" src="https://media.licdn.com/dms/image/C5603AQER4bRgNGN-6Q/profile-displayphoto-shrink_200_200/0?e=1542844800&v=beta&t=3He4K00BbjUAzWOcDEImxj4-cBnwwl02ngVBnWNj05g" alt="Jonathan">
-            
-            <p>
-                Currently enrolled in the Columbia Engineering Coding Boot Camp. 
-                The end result being that he will be a full stack developer.
-            </p>
-
-            <p id="myskills">
-                <b>My Skills:</b> HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, 
-                Database Theory, Bookshelf.js, MongoDB, MySQL, Command Line, Git, and more.*
-            </p>
-    </div>
-
-        </section>
-
-        <section id="contact-info">
-            <h2>Contact Info</h2>
-            <ul>
-                <li>Email: <a href="82.Garcia@gmail.com"> 82.Garcia@gmail.com</a></li>
-                <li>Github: <a href="https://github.com/JonFromNYC"> JonFromNYC</a></li>
-                <li>Portfolio: COMING SOON</li>
-            </ul>
-        </section>
+    <section>
+        <h1>About Me</h1>
+        <img src="assets/images/my_photo.png" style="width: 200px; height: 200px;" class="img-fluid" alt="jonathan">
+        <p id="my-story">I love working with JavaScript and Node because it lets me take turn ideas into reality. 
+                        I've always loved all things tech.
+                        I decided to learn Full Stack Development because I love coming up with ideas that solve a problem. 
+                        I love problem solving and learning new things. </p>
     
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/giphy.gif" alt="My Giphy Project">
+                <div class="card-body">
+                <h5 class="card-title">See what I can do with API's</h5>
+                <p class="card-text">This was one of my first projects. It was my first attempt to use an API. It's simple, silly, and I love it.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="assets/images/train_giphy.gif" alt="Train Scheduler">
+                <div class="card-body">
+                <h5 class="card-title">Where is my train? App</h5>
+                <p class="card-text">A train schedule app that is more than meets the eye.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="assets/images/beach_giphy.gif" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Beach Finder</h5>
+                <p class="card-text">My passion project. Find a beach, see if it has what you're looking for, and sign up for volunteer events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+
 </html>
