@@ -1,2 +1,3 @@
 # JonFromNYC.github.io
-[My Webpage: https://jonfromnyc.github.io/)
+Check out my webpage with links to more information about me
+https://jonfromnyc.github.io/
