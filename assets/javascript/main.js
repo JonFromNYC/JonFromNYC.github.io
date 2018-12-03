@@ -8,10 +8,10 @@ $(document).ready(function () {
             window.open("https://jonfromnyc.github.io/GifTastic/");
         }
         if (thisCard === "train") {
-            window.open("https://github.com/JonFromNYC/Train_Scheduler");
+            window.open("https://jonfromnyc.github.io/Train_Scheduler/");
         }
         if (thisCard === "beach") {
-            window.open("https://github.com/irenebogues/beachlovers");
+            window.open("https://irenebogues.github.io/beachlovers/");
         }
     });
 });
