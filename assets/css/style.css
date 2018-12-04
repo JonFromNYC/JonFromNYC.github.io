@@ -28,12 +28,6 @@ h1 {
   text-align: center;
 }
 
-/* img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .card-img-top {
   width: 100%; 
   height: 200px;
@@ -42,10 +36,3 @@ h1 {
 #my-face {
   display: flex;
 }
-
-
-/* .container {
-  width: 1024px;
-  margin: 0 auto;
-  clear: both;
-} */
