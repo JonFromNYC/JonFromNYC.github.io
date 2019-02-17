@@ -1,74 +1,85 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+	<head>
+		<title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<head>
-    <title>About | Jonathan</title>
-    <!-- CSS RESET -->
-    <link rel="stylesheet" type="text/css" href="assets/css/cssReset.css" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="https://jonfromnyc.github.io/">Jonathan Garcia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="https://jonfromnyc.github.io/">About Me <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="https://github.com/JonFromNYC">Portfolio</a>
-                    <a class="nav-item nav-link" href="https://www.linkedin.com/in/jonathangarcianyc">LinkedIn</a>
-                    <a class="nav-item nav-link" href="https://docs.google.com/document/d/1DtJKs-EF6ysy_nmx5DCb7ydm23K4D6NagINJ4_xjEfo/edit?usp=sharing">My resume</a>
-                </div>
-            </div>
-    </nav>
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">About Me</a></li>
+					<li><a href="#work">Passion Projects</a></li>
+					<li><a href="https://github.com/JonFromNYC">GitHub Portfolio</a></li>
+					<li><a href="https://www.linkedin.com/in/jonathangarcianyc">LinkedIn</a></li>
+					<li><a href="https://docs.google.com/document/d/1DtJKs-EF6ysy_nmx5DCb7ydm23K4D6NagINJ4_xjEfo/edit?usp=sharing">Resume</a></li>
+				</ul>
+			</nav>
 
-    <section>
-        <h1>About Me</h1>
-        <div id="my-face">
-            <img src="assets/images/my_photo.png" style="width: 200px; height: 200px;" class="img-fluid" alt="jonathan">
-            <p id="my-story">I love working with JavaScript and Node because it lets me take turn ideas into reality. 
-                I've always loved all things tech.
-                I decided to learn Full Stack Development because I love coming up with ideas that solve a problem. 
-                I love problem solving and learning new things. Let me help you build your next product.</p>
-        </div>
-        
-        <div class="card-group">
-            <div class="card" id="card-giphy" data-card="giphy">
-                <img class="card-img-top" src="assets/images/giphy.gif" alt="My Giphy Project">
-                <div class="card-body">
-                    <h5 class="card-title">See what I can do with API's</h5>
-                    <p class="card-text">This was one of my first projects. It was my first attempt to use an API. It's simple, silly, and I love it.</p>
-                </div>
-            </div>
-            <div class="card" id="card-train" data-card="train">
-                <img class="card-img-top" src="assets/images/train_giphy.gif" alt="Train Scheduler">
-                <div class="card-body">
-                <h5 class="card-title">Where is my train? App</h5>
-                <p class="card-text">A train schedule app that is more than meets the eye.</p>
-                </div>
-            </div>
-            <div class="card" id="card-beach" data-card="beach">
-                <img class="card-img-top" src="assets/images/beach_giphy.gif" alt="Card image cap">
-                <div class="card-body">
-                <h5 class="card-title">Beach Finder</h5>
-                <p class="card-text">My passion project. Find a beach, see if it has what you're looking for, and sign up for volunteer events.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/pic00.jpg" alt="my photo" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Hi. I'm <strong><a href="https://www.linkedin.com/in/jonathangarcianyc">Jonathan</a></strong>.</h1>
+							</header>
+							<p>I'm a Columbia University Coding Bootcamp Full Stack Champion. I love working with <strong>JavaScript and Node</strong>. It lets me take turn ideas into reality. 
+								Let me help you build your next product.
+							</p>
+							<a href="#work" class="button large scrolly">See some of my favorite projects</a>
+						</div>
+					</div>
+				</div>
+			</article>
 
-    
+		<!-- Work -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h2>These are three of my favorite projects.</h2>
+						<p>I've built webpages meant for fun and games, for utility, and projects that help clean up the environment.</p>
+					</header>
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small card" id="card-giphy" data-card="giphy">
+							<section class="box style1">
+								<img class="image featured" src="images/giphy.gif" style="widows: 314px; height:177px" alt="Something Fun">
+								<h3>Have a laugh</h3>
+								<p>This is one of the first webpages I ever built. I built it using the Giphy API, JavaScript, JQUERY, and Bootstrap.</p>
+							</section>
+						</div>
 
+						<div class="col-4 col-6-medium col-12-small card" id="card-train" data-card="train">
+							<section class="box style1">
+								<img class="image featured" src="images/train_giphy.gif" style="widows: 314px; height:177px" alt="Train Scheduler">
+								<h3>Find your train</h3>
+								<p>A train schedule app that's more than meets the eye. It uses Firebase, Moment JS, & JQuery.</p>
+							</section>
+						</div>
 
+						<div class="col-4 col-6-medium col-12-small card" id="card-beach" data-card="beach">
+							<section class="box style1">
+								<img class="image featured" src="images/beach_giphy.gif" style="widows: 314px; height:177px" alt="Beach Finder">
+								<h3>Find the best beaches</h3>
+								<p>Find beaches by amenity or discover which days you can volunteer for beach cleanup.</p>
+							</section>
+						</div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="assets/javascript/main.js"></script>
-</body>
-
+					</div>
+					<footer>
+						<a href="https://github.com/JonFromNYC" class="button large scrolly">See all my other projects on GitHub</a>
+					</footer>
+				</div>
+            </article>
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+            <!-- My JS -->
+            <script src="javascript/main.js"></script>
+	</body>
 </html>
