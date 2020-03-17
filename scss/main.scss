@@ -1,0 +1,77 @@
+@import "config";
+
+/* Set box Sizing */
+* {
+  box-sizing: border-box; // Padding won't affect sizing
+}
+
+body {
+  @include background;
+  background-color: $primary-color;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; // Space between the lines
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; //Make the font less thick
+
+  &.lg-heading {
+    font-size: 6rem; // Font size = 16 * rem
+  }
+
+  &.sm-heading {
+    // Lighten background of this div and add an opacity
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+} // End of Headings
+
+/* Links */
+a {
+  color: #fff; // make links white
+  text-decoration: none; // remove link underlines
+}
+
+/* Header */
+header {
+  position: fixed; //always stay at top
+  z-index: 2; // Always up front
+  width: 100%; //stretch across screen
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color; // change to secondar color on hover
+        @include easeOut(); // link will transition to secondary color
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden; //never see scroll bard
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+}
