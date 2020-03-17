@@ -1,0 +1,22 @@
+{
+  "name": "jonfromnyc.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio Page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w assets/scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonFromNYC/JonFromNYC.github.io.git"
+  },
+  "author": "Jonathan Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonFromNYC/JonFromNYC.github.io/issues"
+  },
+  "homepage": "https://github.com/JonFromNYC/JonFromNYC.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
