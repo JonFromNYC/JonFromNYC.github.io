@@ -35,3 +35,111 @@
     }
   }
 }
+
+/* Menu Overlay */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-branding,
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 5); // Make background of nav menu dark
+    list-style: none; // remove the bullet points
+    transform: translate3d(
+      0,
+      -100%,
+      0
+    ); //Hide the nav above the page then slide nav down
+    @include easeOut;
+
+    &.show {
+      // Slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  //Branding
+  &-branding {
+    background: $primary-color;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from bottom
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/IMG_0339.jpg");
+      background-size: cover;
+      border-radius: 50%; //make image circular
+      border: solid 3px $secondary-color;
+    }
+  }
+
+  .nav-item {
+    // placed off the screen until show = true
+    transform: translate3d(
+      600px,
+      0,
+      0
+    ); //Off to the right of the screen 600 pixels
+    @include easeOut;
+
+    &.show {
+      // Slide in from right side of screen
+      transform: translate3d(0, 0, 0);
+    }
+
+    // Color the link
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+  .nav-link {
+    // Make the nav and photo line up to each other
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    @include easeOut;
+
+    //on hover the nav link changes to secondary color
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Delay each nav item slide by 0.1seconds
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    //For each nth child set a transition delay
+    transition-delay: $x * 0.1s;
+  }
+}
