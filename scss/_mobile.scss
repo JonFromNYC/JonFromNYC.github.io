@@ -1,10 +1,8 @@
 /* Wide Screen Displays*/
-@include mediaXl {
-}
+@include mediaXl {}
 
 /* Desktops & Laptops Displays */
-@include mediaLg {
-}
+@include mediaLg {}
 
 /* Tablets & Small Laptops */
 @include mediaMd {
@@ -40,10 +38,20 @@
     transform: translate3d(100%, 0, 0); //slide in from the right.
 
     .portrait {
-      background: url ("../img/IMG_0339.jpg");
+      background: url ("../img/portrait_250x250.jpg");
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+    grid-template-columns: 1fr;
   }
 }
 
